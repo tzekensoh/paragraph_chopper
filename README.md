@@ -35,9 +35,12 @@ cd paragraph_chopper
 bb server.clj
 
 
-To share your local server with others, install ngrok, then run ngrok http 8080 in a separate terminal.
+To share your local server with others, install ngrok, then run:
+ngrok http 8080
+
 This will generate a public HTTPS URL (e.g., https://abc123.ngrok-free.app) that tunnels directly to your local app at
 http://localhost:8080.
 
 If it’s your first time using ngrok, register at ngrok.com, get your auth token,
-and run ngrok config add-authtoken YOUR_TOKEN_HERE to enable access.
+and run:
+ngrok config add-authtoken YOUR_TOKEN_HERE to enable access.
